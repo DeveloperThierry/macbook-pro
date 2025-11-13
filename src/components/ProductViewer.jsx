@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { Canvas } from "@react-three/fiber";
 import { Box, OrbitControls } from "@react-three/drei";
 import MacbookModel14 from "./models/Macbook-14";
+import StudioLights from "./StudioLights";
 // import MacbookModel14 from "./models/Macbook-14.jsx";
 
 // import StudioLights from "./three/StudioLights.jsx";
@@ -66,7 +67,7 @@ const ProductViewer = () => {
           scale={10 * scale}
           material-color={color}
         ></Box>
-        <ambientLight intensity={0.5}/>
+        <StudioLights/>
         <MacbookModel14 scale={0.06} position={[0,0,0]}/>
         <OrbitControls enableZoom={false}/>
       </Canvas>
